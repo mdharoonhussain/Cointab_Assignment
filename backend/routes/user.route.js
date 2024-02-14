@@ -44,4 +44,15 @@ router.get('/', async (req, res) => {
     }
 });
 
+  router.post('/posts/bulk-add', async (req, res) => {
+    try {
+        const posts = req.body;
+        const insertedPosts = await PostModel.insertMany(posts);
+        res.status(201).json({ message: 'Posts added successfully', insertedPosts });
+    } catch (error) {
+        console.error('Error adding posts:', error);
+        res.status(500).json({ error: 'Internal server error' });
+    }
+  });
+
 module.exports = router;
