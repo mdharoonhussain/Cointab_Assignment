@@ -1,0 +1,117 @@
+#header > h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    color: brown;
+    text-align: center;
+}
+
+#allUsers {
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    margin: auto;
+}
+
+#allUsers > button {
+    width: 150px;;
+    height: 40px;
+    border-radius: 7px;
+    cursor: pointer;
+    color: brown;
+    font-size: 18px;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  #allUsers {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  #fetchUsersBtn {
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  #userList {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+  }
+  
+  li {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-basis: calc(50% - 20px); 
+  }
+  
+  li p {
+    margin: 0;
+  }
+  
+  li hr {
+    border: none;
+    border-top: 1px solid #ddd;
+  }
+  
+  /* Add button */
+#addButton {
+    display: none; /* Initially hidden */
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  #addButton button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  #addButton button:hover {
+    background-color: #45a049;
+  }
+  
+  .buttonContainer {
+    display: flex;
+    justify-content: flex-end; 
+  }
+  
+  .addButton, .openButton {
+    margin-left: 10px;
+  }
+
+.addButton, .openButton {
+    color: brown;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; 
+  }
+  
+  
